@@ -1,0 +1,38 @@
+        body {
+            background-color: rgb(245, 191, 228);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .heading {
+            background-color: rgb(250, 250, 252);
+            padding: 15px;
+        }
+
+        .timer-label {
+            color: rgb(79, 3, 70);
+            margin-top: 20px;
+        }
+
+        .time-display {
+            font-size: 80px;
+            margin: 20px 0;
+            color: rgb(79, 3, 70);
+        }
+
+        button {
+            color: white;
+            background-color: rgb(255, 0, 132);
+            border: none;
+            margin: 10px;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
