@@ -11,6 +11,8 @@ let longBreakTime = 15;
 const minuteDisplay = document.getElementById("minutes");
 const secondDisplay = document.getElementById("seconds");
 
+const alarm = new Audio("https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg");
+
 function updateDisplay() {
     minuteDisplay.textContent = minutes < 10 ? '0' + minutes : minutes;
     secondDisplay.textContent = seconds < 10 ? '0' + seconds : seconds;
@@ -28,7 +30,12 @@ function startTimer() {
         if (minutes === 0 && seconds === 0) {
             clearInterval(timer);
             isRunning = false;
+            alarm.play();
+            alarm.loop = true;
+            alarm.play();
             alert("Time's UP!");
+            alarm.pause();
+            alarm.currentTime = 0;
             switchTime();
             startTimer();
             return;
@@ -71,7 +78,7 @@ function switchTime() {
         minutes = longBreakTime;
     }
 
-    else{
+    else {
         minutes = workTime;
         count++;
     }
