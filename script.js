@@ -5,6 +5,8 @@ const breakTime = 5;
 let minutes = workTime;
 let m;
 let isRunning = false;
+let count = 1;
+let longBreakTime = 15;
 
 const minuteDisplay = document.getElementById("minutes");
 const secondDisplay = document.getElementById("seconds");
@@ -61,10 +63,16 @@ function resetTime() {
 updateDisplay();
 
 function switchTime() {
-    if (m == workTime) {
+    if (m == workTime && count % 3 != 0) {
         minutes = breakTime;
     }
-    else {
+
+    else if (m == workTime && count % 3 == 0) {
+        minutes = longBreakTime;
+    }
+
+    else{
         minutes = workTime;
+        count++;
     }
 }

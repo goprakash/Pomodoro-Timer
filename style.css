@@ -7,13 +7,21 @@
         }
 
         .heading {
-            background-color: rgb(250, 250, 252);
+            background-color: rgb(245, 222, 237);
             padding: 15px;
+            color: rgb(46, 31, 44);
         }
 
         .timer-label {
             color: rgb(79, 3, 70);
             margin-top: 20px;
+        }
+
+        .instructions {
+            color: rgb(120, 0, 100);
+            margin: 10px 0;
+            opacity: 0.65;
+            font-family:Georgia, 'Times New Roman', Times, serif ;
         }
 
         .time-display {
