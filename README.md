@@ -1,4 +1,3 @@
-POMODORO TIMER
 Pomodoro is a study technique to help boost productivity on lazy days. Pomodoro Timer is is a simple web application with a 25-minute study timer followed by a 5-minute break timer.
 
 Demo-https://goprakash.github.io/Pomodoro-Timer/
